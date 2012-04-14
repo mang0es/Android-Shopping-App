@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+    
+    <EditText
+        android:id="@+id/PersonEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentLeft="true"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email"
+        >
+    <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/PersonPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PersonEmail"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+        <!--   -->
+    
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Register Now!"
+        />
+
+  
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This is part of "QRDroidServices", by DroidLa. If you're creating an Android app
+which uses one or more services provided by "QR Droid", you can use this code for
+free, and modify it as you need, for personal and commercial use.
+  
+Any other use of this code is forbidden.
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<TextView
+		android:id="@+id/txt"
+		android:text="@string/enter_url"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+	/>
+	
+	<EditText
+		android:id="@+id/txt_path"
+		android:text="http://"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:layout_below="@id/txt"
+		android:maxLines="3"
+	/>
+	
+	<Button
+		android:id="@+id/button_decode"
+		android:text="@string/decode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/txt_path"
+		android:layout_margin="5dp"
+	/>
+	
+	<Spinner
+		android:id="@+id/spin_complete"
+		android:entries="@array/complete"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_margin="5dp"
+		android:layout_below="@id/txt_path"
+		android:layout_toLeftOf="@id/button_decode"
+	/>
+	
+	<EditText
+		android:id="@+id/result"
+		android:editable="false"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spin_complete"
+		android:layout_marginTop="15dp"
+	/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This is part of "QRDroidServices", by DroidLa. If you're creating an Android app
+which uses one or more services provided by "QR Droid", you can use this code for
+free, and modify it as you need, for personal and commercial use.
+  
+Any other use of this code is forbidden.
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<Button
+		android:id="@+id/button_scan"
+		android:text="@string/scan"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="5dp"
+	/>
+	
+	<Spinner
+		android:id="@+id/spin_complete"
+		android:entries="@array/complete"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_margin="5dp"
+	/>
+	
+	<EditText
+		android:id="@+id/result"
+		android:editable="false"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spin_complete"
+		android:layout_marginTop="15dp"
+		android:visibility="gone"
+	/>
+</RelativeLayout>

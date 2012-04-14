@@ -1,0 +1,62 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS saveditems (
+	_id				INTEGER PRIMARY KEY AUTOINCREMENT,
+	item			VARCHAR(40),
+	manufacturer 	VARCHAR(40),
+	price			VARCHAR(10))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS customers (
+	email 		VARCHAR(40) PRIMARY KEY,
+	password	VARCHAR(50),
+	name 		VARCHAR(40),
+	streetname	VARCHAR(30),
+	cityname	VARCHAR(30),
+	statename	VARCHAR(2),
+	zipcode		VARCHAR(10))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS transactions (
+	_id				INTEGER PRIMARY KEY AUTOINCREMENT,
+	transactionid	VARCHAR(50),
+	itemname		VARCHAR(40),
+	date			VARCHAR(20),
+	totalamount		VARCHAR(40),
+	email			VARCHAR(40))
+</statement>
+<statement>
+CREATE TABLE IF NOT EXISTS items (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+	itemTitle VARCHAR(100), 
+	itemCompany VARCHAR(50), 
+	itemPrice VARCHAR(650), 
+	itemIcon VARCHAR(50))
+</statement>
+<statement>INSERT INTO items VALUES(1, 'Starcraft II: Wings of Liberty', 'Blizzard Entertainment', '$54.96', 'sc2')</statement>
+<statement>INSERT INTO items VALUES(2, 'Batman Arkham City (PlayStation 3)', 'Warner Bros', '$49.96', 'BatmanArkhamCity_PS3')</statement>
+<statement>INSERT INTO items VALUES(3, 'Batman Arkham City (Xbox 360)', 'Warner Bros', '$49.99', 'BatmanArkhamCity_Xbox360')</statement>
+<statement>INSERT INTO items VALUES(4, 'Batman Arkham City (PC)', 'Warner Bros', '$39.99', 'BatmanArkhamCity_PC')</statement>
+<statement>INSERT INTO items VALUES(5, 'Portal 2 (PlayStation 3)', 'Valve', '$55.75', 'Portal2_PS3')</statement>
+<statement>INSERT INTO items VALUES(6, 'Portal 2 (Xbox 360)', 'Valve', '$56.95', 'Portal2_Xbox360')</statement>
+<statement>INSERT INTO items VALUES(7, 'Portal 2 (PC)', 'Valve', '$39.95', 'Portal2_PC')</statement>
+<statement>INSERT INTO items VALUES(8, 'Amnesia: The Dark Descent', 'ValuSoft', '$19.96', 'Amnesia_TheDarkDescent_PC')</statement>
+<statement>INSERT INTO items VALUES(9, 'Call of Duty: Modern Warfare 3 (Nintendo Wii)', 'ACTIVISION', '$49.99', 'CallOfDuty_ModernWarfare_III_Wii')</statement>
+<statement>INSERT INTO items VALUES(10, 'Call of Duty: Modern Warfare 3 (PlayStation 3)', 'ACTIVISION', '$51.99', 'CallOfDuty_ModernWarfare_III_PS3')</statement>
+<statement>INSERT INTO items VALUES(11, 'Call of Duty: Modern Warfare 3 (Xbox 360)', 'ACTIVISION', '$51.99', 'CallOfDuty_ModernWarfare_III_Xbox360')</statement>
+<statement>INSERT INTO items VALUES(12, 'Call of Duty: Modern Warfare 3 (Nintendo DS)', 'ACTIVISION', '$29.99', CallOfDuty_ModernWarfare_III_NDS')</statement>
+<statement>INSERT INTO items VALUES(13, 'Call of Duty: Modern Warfare 3 (PC)', 'ACTIVISION', $57.99', 'CallOfDuty_ModernWarfare_III_PC')</statement>
+
+
+
+<statement>
+CREATE TABLE IF NOT EXISTS saveditems	(
+	_id				INTEGER PRIMARY KEY AUTOINCREMENT,
+	item			VARCHAR(40),
+	manufacturer 	VARCHAR(40),
+	price			VARCHAR(10)
+
+	)
+</statement>
+
+</sql>

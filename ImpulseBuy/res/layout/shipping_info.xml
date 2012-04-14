@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<ImageView 
+	    android:id="@+id/banner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/banner" />
+	
+	<TextView 
+	    android:id="@+id/itemInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/banner"
+	    android:text="Item Info"
+	    android:textSize="16dp"	/>
+	
+	<TextView
+	    android:id="@+id/itemTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/itemInfo" />
+	    
+	<TextView
+	    android:id="@+id/itemCompany"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/itemTitle" />
+	    
+	<TextView
+	    android:id="@+id/itemPrice"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/itemCompany" />	    	
+	
+	<TextView 
+	    android:id="@+id/shippingInfo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/itemPrice"
+	    android:layout_marginTop="20dp"
+	    android:text="Shipping Info"
+	    android:textSize="16dp"	/>	
+	
+	<EditText 
+	    android:id="@+id/personName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/shippingInfo"
+	    android:layout_alignParentLeft="true"
+	    android:hint="Enter your name" />	
+	
+	<EditText
+	    android:id="@+id/streetName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/personName"
+	    android:hint="Street Name" />
+	
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/linearAddress"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/streetName"
+	    android:weightSum="1.0" >
+		
+	    <EditText
+	    	android:id="@+id/cityName"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight=".50"
+	    	android:hint="City" />
+	    <AutoCompleteTextView
+	    	android:id="@+id/state"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight=".20"
+	    	android:hint="State" />
+	    <EditText
+	    	android:id="@+id/zipCode"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight=".30"
+	    	android:hint="Zip" />	    	           
+	</LinearLayout>
+	
+	<Button
+	    android:id="@+id/shippingContinue"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/linearAddress"
+	    android:layout_centerHorizontal="true"
+	    android:text="Continue" />
+	    
+</RelativeLayout>

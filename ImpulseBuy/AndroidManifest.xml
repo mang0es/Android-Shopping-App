@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmpe137.shopping.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar"
+        
+        >
+        <activity
+            android:label="@string/app_name"
+            android:name=".ShoppingAppActivity"
+			android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:label = "@string/app_name"
+           android:name=".Search" 
+           android:screenOrientation="portrait"
+		   android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                	<action android:name="android.intent.action.VIEW"	/>
+                	<category android:name="android.intent.category.DEFAULT"	/>
+            </intent-filter>
+            
+        </activity>
+       	<activity
+       	    android:label = "@string/app_name"
+       	    android:name=".WelcomeScreen"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        	<action android:name="android.intent.action.VIEW"	/>
+       	        	<category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".LoggedIn"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        	<action android:name="android.intent.action.VIEW"	/>
+       	        	<category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".NewUser"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        	<action android:name="android.intent.action.VIEW"	/>
+       	        	<category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".NewUserContinue"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".ShippingInfo"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+      	<activity
+       	    android:name=".MyAccount"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<!-- <activity
+       	    android:name=".MyPreferences"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity> -->
+       	<activity
+       	    android:name=".Update"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".ForgotPassword"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".Transactions"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".SavedItems"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+      	<activity
+       	    android:name=".Browse"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".Buying"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".ChoosePayment"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".Confirmation"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity
+       	    android:name=".LogIn"
+       	    android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden">
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.VIEW"	/>
+     	        <category android:name="android.intent.category.DEFAULT"	/>
+       	    </intent-filter>
+       	</activity>
+       	<activity android:name=".Services"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Scan"
+                  android:label="@string/scan"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Encode"
+                  android:label="@string/encode"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Decode"
+                  android:label="@string/decode"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".SearchAll">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            </activity>
+            
+            <activity android:name=".SearchCompany">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+                </activity>
+ 		<activity android:name=".ItemsByCompany">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+                </activity>
+        <!-- <activity android:name=".SearchNearby">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            </activity> -->
+            
+        <!-- <activity android:name=".SearchType">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            </activity> -->
+                
+        <!-- <activity android:name=".SearchSimilar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            </activity> -->
+       
+    </application>
+
+</manifest>

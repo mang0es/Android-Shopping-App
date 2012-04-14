@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"	
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+    
+    <TextView
+        android:id="@+id/UpdateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_centerHorizontal="true"
+        android:text="Update Information"
+        />
+    
+    <EditText 
+        android:id="@+id/Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UpdateLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="Update your name"
+        />
+    
+    <EditText
+        android:id="@+id/StreetName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:hint="Address"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearAddress"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@id/StreetName"
+
+        android:weightSum="1.0" >
+    
+	    <EditText
+	        android:id="@+id/CityName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".50"
+	        android:hint="City"
+	        />
+
+	    <AutoCompleteTextView
+	    	android:id="@+id/StateName"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="fill_parent"
+	    	android:layout_weight=".20"
+	    	android:hint="State"
+
+			/>
+
+	    <EditText
+	        android:id="@+id/ZipCode"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" 
+	        android:layout_weight=".30"
+	        android:hint="Zip"
+
+	        />
+
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/NewPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearAddress"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        />
+    
+    <EditText
+        android:id="@+id/OldPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewPassword"
+        android:hint="Confirm Old Password"
+        android:inputType="textPassword"
+        />
+    
+    <Button
+        android:id="@+id/UpdateConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OldPassword"
+        android:text="Confirm Update"
+        android:layout_centerHorizontal="true"
+        />
+    
+
+</RelativeLayout>

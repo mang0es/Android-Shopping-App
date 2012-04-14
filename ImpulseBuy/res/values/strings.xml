@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Press to continue...</string>
+    <string name="dbname">item_directory</string>
+    <!--  dummy login name/pws -->
+    <string-array name="loginNames">
+        <item>batman@gmail.com</item>
+    </string-array>
+    
+    <string-array name="loginPasswords">
+        <item>robin</item>
+    </string-array>
+        
+    <string name="app_name">ImpulseBuy</string>
+	<string name="scan">Scan</string>
+    <string name="encode">Generate</string>
+    <string name="decode">Decode</string>
+    
+    <!-- Errors and messages -->
+    <string name="qrdroid_missing">QR Droid version 3.5 or later is required. Do you want to download or update it for free?</string>
+    <string name="from_market">From the Market</string>
+    <string name="direct">Direct download</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_code">Enter some text to encode</string>
+    <string name="not_saved">QR code image could not be saved. Check your SD card is available</string>
+    <string name="saved">QR code image was saved as</string>
+    <string name="enter_url">Enter local path (starting with /) or remote URL (starting with http://) of QR code image</string>
+    <string name="not_decoded">QR code image could not been loaded or decoded</string>
+    <string name="procesing">Processing...</string>
+    
+    <!-- URLs -->
+    <string name="url_market">http://market.android.com/details?id=la.droid.qr</string>
+    <string name="url_direct">http://droid.la/apk/qr/</string>
+    <string name="url_source">http://qrdroid.com/services</string>
+
+	<!-- Demo -->
+	<string name="demo">"This is a demo for Android developers who want to use \"QR Droid\" services in their own apps, for free.\n\nThis won't be useful to final users. Instead, please install \"QR Droid\".\n\nIf you are a developer, get demo documentation and source code here:\nhttp://qrdroid.com/services"</string>
+	<string name="qrDroid">Get QR Droid</string>
+	<string name="source">Get demo docs</string>
+	<string name="close">Close</string>
+	<string name="imagename">blank</string>
+</resources>

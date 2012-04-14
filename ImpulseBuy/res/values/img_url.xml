@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="img_url">
+		<item>Get Bitmap</item>
+		<item>Image URL</item>
+	</string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentLeft="true"
+        android:inputType="textPersonName"
+        android:hint="Enter your name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/StreetName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PersonName"
+        android:layout_alignLeft="@id/PersonName"
+        android:layout_centerHorizontal="true" 
+        android:hint="Street Name" />
+       
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearAddress"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@id/StreetName"
+        android:weightSum="1.0">
+    <EditText
+        android:id="@+id/CityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:hint="City"/>
+        <!--android:layout_below="@+id/StreetName"
+        android:layout_alignLeft="@+id/PersonName" -->
+        
+
+     <AutoCompleteTextView
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20"
+       	android:hint="State"
+        />
+        <!-- android:layout_toRightOf="@id/CityName"
+        android:layout_alignBottom="@id/CityName" -->
+        
+    
+    <EditText
+        android:id="@+id/ZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:hint="Zip" />
+    </LinearLayout>
+    <!--  
+	 	android:layout_toRightOf="@id/State"
+	 	android:layout_alignBottom="@id/CityName"
+      -->  
+    	
+    <Button
+        android:id="@+id/NewUserContinue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearAddress"
+        android:layout_centerHorizontal="true"
+        android:text="Continue" />
+
+</RelativeLayout>
